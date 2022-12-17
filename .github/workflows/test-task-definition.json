@@ -1,0 +1,84 @@
+{
+  "taskDefinitionArn": "arn:aws:ecs:me-south-1:024875719645:task-definition/test-hello:1",
+  "containerDefinitions": [
+      {
+          "name": "test-hello",
+          "image": "024875719645.dkr.ecr.me-south-1.amazonaws.com/hello-test:latest",
+          "cpu": 0,
+          "links": [],
+          "portMappings": [
+              {
+                  "name": "test-hello-3000-tcp",
+                  "containerPort": 3000,
+                  "hostPort": 0,
+                  "protocol": "tcp",
+                  "appProtocol": "http"
+              }
+          ],
+          "essential": true,
+          "entryPoint": [],
+          "command": [],
+          "environment": [],
+          "environmentFiles": [],
+          "mountPoints": [],
+          "volumesFrom": [],
+          "secrets": [],
+          "dnsServers": [],
+          "dnsSearchDomains": [],
+          "extraHosts": [],
+          "dockerSecurityOptions": [],
+          "dockerLabels": {},
+          "ulimits": [],
+          "systemControls": []
+      }
+  ],
+  "family": "test-hello",
+  "taskRoleArn": "arn:aws:iam::024875719645:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::024875719645:role/ecsTaskExecutionRole",
+  "networkMode": "bridge",
+  "revision": 1,
+  "volumes": [],
+  "status": "ACTIVE",
+  "requiresAttributes": [
+      {
+          "name": "com.amazonaws.ecs.capability.ecr-auth"
+      },
+      {
+          "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17"
+      },
+      {
+          "name": "com.amazonaws.ecs.capability.task-iam-role"
+      },
+      {
+          "name": "ecs.capability.execution-role-ecr-pull"
+      },
+      {
+          "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+      }
+  ],
+  "placementConstraints": [],
+  "compatibilities": [
+      "EC2"
+  ],
+  "requiresCompatibilities": [
+      "EC2"
+  ],
+  "cpu": "128",
+  "memory": "256",
+  "runtimePlatform": {
+      "cpuArchitecture": "X86_64",
+      "operatingSystemFamily": "LINUX"
+  },
+  "registeredAt": "2022-12-16T14:04:14.342Z",
+  "registeredBy": "arn:aws:iam::024875719645:user/suleman.amjad@thebyte.app",
+  "tags": [
+      {
+          "key": "ecs:taskDefinition:createdFrom",
+          "value": "ecs-console-v2"
+      },
+      {
+          "key": "ecs:taskDefinition:stackId",
+          "value": "arn:aws:cloudformation:me-south-1:024875719645:stack/ECS-Console-V2-TaskDefinition-be864866-3333-45bf-a5c8-d49a8d337dab/83a601a0-7d4a-11ed-a686-0a768f7da7de"
+      }
+  ]
+}
