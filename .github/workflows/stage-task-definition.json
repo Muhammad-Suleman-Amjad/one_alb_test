@@ -1,82 +1,82 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:me-south-1:024875719645:task-definition/stage-hello:1",
-  "containerDefinitions": [
-      {
-          "name": "hello-stage",
-          "image": "024875719645.dkr.ecr.me-south-1.amazonaws.com/hello-stage:latest",
-          "cpu": 0,
-          "links": [],
-          "portMappings": [
-              {
-                  "containerPort": 3000,
-                  "hostPort": 0,
-                  "protocol": "tcp"
-              }
-          ],
-          "essential": true,
-          "entryPoint": [],
-          "command": [],
-          "environment": [],
-          "environmentFiles": [],
-          "mountPoints": [],
-          "volumesFrom": [],
-          "secrets": [],
-          "dnsServers": [],
-          "dnsSearchDomains": [],
-          "extraHosts": [],
-          "dockerSecurityOptions": [],
-          "dockerLabels": {},
-          "ulimits": [],
-          "systemControls": []
-      }
-  ],
-  "family": "stage-hello",
-  "taskRoleArn": "arn:aws:iam::024875719645:role/ecsTaskExecutionRole",
-  "executionRoleArn": "arn:aws:iam::024875719645:role/ecsTaskExecutionRole",
-  "networkMode": "bridge",
-  "revision": 1,
-  "volumes": [],
-  "status": "ACTIVE",
-  "requiresAttributes": [
-      {
-          "name": "com.amazonaws.ecs.capability.ecr-auth"
-      },
-      {
-          "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17"
-      },
-      {
-          "name": "com.amazonaws.ecs.capability.task-iam-role"
-      },
-      {
-          "name": "ecs.capability.execution-role-ecr-pull"
-      },
-      {
-          "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
-      }
-  ],
-  "placementConstraints": [],
-  "compatibilities": [
-      "EC2"
-  ],
-  "requiresCompatibilities": [
-      "EC2"
-  ],
-  "cpu": "128",
-  "memory": "256",
-  "runtimePlatform": {
-      "cpuArchitecture": "X86_64",
-      "operatingSystemFamily": "LINUX"
-  },
-  "registeredAt": "2022-12-16T14:05:55.283Z",
-  "registeredBy": "arn:aws:iam::024875719645:user/suleman.amjad@thebyte.app",
-  "tags": [
-      {
-          "key": "ecs:taskDefinition:createdFrom",
-          "value": "ecs-console-v2"
-      },
-      {
-          "key": "ecs:taskDefinition:stackId",
-          "value": "arn:aws:cloudformation:me-south-1:024875719645:stack/ECS-Console-V2-TaskDefinition-cb2eb5cd-5b26-4866-a92c-0829e9e60463/bfcbcd90-7d4a-11ed-875c-0ee5326e1e0a"
-      }
-  ]
+    "taskDefinitionArn": "arn:aws:ecs:me-south-1:024875719645:task-definition/stage-hello:1",
+    "containerDefinitions": [
+        {
+            "name": "hello-stage",
+            "image": "024875719645.dkr.ecr.me-south-1.amazonaws.com/hello-stage:latest",
+            "cpu": 0,
+            "links": [],
+            "portMappings": [
+                {
+                    "containerPort": 3000,
+                    "hostPort": 0,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "entryPoint": [],
+            "command": [],
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "secrets": [],
+            "dnsServers": [],
+            "dnsSearchDomains": [],
+            "extraHosts": [],
+            "dockerSecurityOptions": [],
+            "dockerLabels": {},
+            "ulimits": [],
+            "systemControls": []
+        }
+    ],
+    "family": "stage-hello",
+    "taskRoleArn": "arn:aws:iam::024875719645:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::024875719645:role/ecsTaskExecutionRole",
+    "networkMode": "bridge",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2"
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "cpu": "128",
+    "memory": "256",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2022-12-16T14:05:55.283Z",
+    "registeredBy": "arn:aws:iam::024875719645:user/suleman.amjad@thebyte.app",
+    "tags": [
+        {
+            "key": "ecs:taskDefinition:createdFrom",
+            "value": "ecs-console-v2"
+        },
+        {
+            "key": "ecs:taskDefinition:stackId",
+            "value": "arn:aws:cloudformation:me-south-1:024875719645:stack/ECS-Console-V2-TaskDefinition-cb2eb5cd-5b26-4866-a92c-0829e9e60463/bfcbcd90-7d4a-11ed-875c-0ee5326e1e0a"
+        }
+    ]
 }
