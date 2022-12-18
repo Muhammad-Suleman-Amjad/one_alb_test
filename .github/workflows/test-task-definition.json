@@ -8,11 +8,11 @@
           "links": [],
           "portMappings": [
               {
-                  "name": "test-hello-3000-tcp",
                   "containerPort": 3000,
                   "hostPort": 0,
                   "protocol": "tcp",
-                  "appProtocol": "http"
+                  "appProtocol": "http",
+                  "name": "test-hello-3000-tcp"
               }
           ],
           "essential": true,
